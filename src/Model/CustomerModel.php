@@ -1,8 +1,8 @@
 <?php
 
-namespace D4rk0snet\CoralOrder\Model;
+namespace D4rk0snet\CoralCustomer\Model;
 
-use D4rk0snet\Coralguardian\Enums\CustomerType;
+use D4rk0snet\CoralCustomer\Enum\CustomerType;
 use D4rk0snet\Coralguardian\Enums\Language;
 
 class CustomerModel implements \JsonSerializable

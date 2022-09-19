@@ -1,0 +1,26 @@
+{
+    "name": "d4rk0snet/coral-customer",
+    "description": "Plugin métier pour la gestion des customers au sein de l'association de préservation des coraux Coral-Guardian",
+    "type": "wordpress-plugin",
+    "autoload": {
+        "psr-4": {
+            "D4rk0snet\\CoralCustomer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "d4rk0s",
+            "email": "gregory@d4rk0s.net"
+        }
+    ],
+    "repositories": [
+      {
+        "type" : "vcs",
+        "url": "git@github.com:ds-hyperion/doctrine.git",
+        "no-api": true
+      }
+    ],
+    "require": {
+      "hyperion/doctrine": "dev-dev"
+    }
+}

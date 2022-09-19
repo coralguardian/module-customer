@@ -1,6 +1,6 @@
 <?php
 
-namespace D4rk0snet\Coralguardian\Enums;
+namespace D4rk0snet\CoralCustomer\Enum;
 
 enum CustomerType : string
 {

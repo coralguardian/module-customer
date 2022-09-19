@@ -1,6 +1,6 @@
 <?php
 
-namespace D4rk0snet\Coralguardian\Entity;
+namespace D4rk0snet\CoralCustomer\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
