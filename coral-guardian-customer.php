@@ -17,7 +17,7 @@ use D4rk0snet\CoralCustomer\Filter\GetCustomer;
 use Hyperion\Doctrine\Plugin;
 
 add_action(CoralCustomerActions::NEW_CUSTOMER->value, [NewCustomer::class,'doAction'], 10, 1);
-add_filter(CoralCustomerFilters::GET_CUSTOMER->value, [GetCustomer::class,'doAction'], 10, 2);
+add_filter(CoralCustomerFilters::GET_CUSTOMER->value, [GetCustomer::class,'doAction'], 10, 3);
 add_filter(Plugin::ADD_ENTITIES_FILTER, function (array $entityPaths) {
     $entityPaths[] = __DIR__."/src/Entity";
 

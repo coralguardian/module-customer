@@ -15,7 +15,7 @@ class GetCustomer
      * @throws Exception
      */
     public static function doAction(
-        $customer,
+        $value,
         string $email,
         CustomerType $type
     ) : CustomerEntity | CompanyCustomerEntity | null
