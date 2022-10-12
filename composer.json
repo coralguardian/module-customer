@@ -21,6 +21,6 @@
       }
     ],
     "require": {
-      "hyperion/doctrine": "dev-pprod"
+      "hyperion/doctrine": "dev-dev"
     }
 }
