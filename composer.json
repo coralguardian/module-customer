@@ -21,6 +21,6 @@
       }
     ],
     "require": {
-      "hyperion/doctrine": "dev-dev"
+      "wordpress-hyperion/doctrine": "dev-dev"
     }
 }
