@@ -13,14 +13,7 @@
             "email": "gregory@d4rk0s.net"
         }
     ],
-    "repositories": [
-      {
-        "type" : "vcs",
-        "url": "git@github.com:ds-hyperion/doctrine.git",
-        "no-api": true
-      }
-    ],
     "require": {
-      "wordpress-hyperion/doctrine": "dev-dev"
+      "wordpress-hyperion/doctrine": "^1.0"
     }
 }
