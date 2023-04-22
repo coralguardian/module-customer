@@ -52,7 +52,7 @@ class CustomerModel implements \JsonSerializable
     /**
      * @required
      */
-    private Language $language;
+    private Lancustguage $language;
 
     /**
      * @required
