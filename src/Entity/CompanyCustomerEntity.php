@@ -15,6 +15,10 @@ class CompanyCustomerEntity extends CustomerEntity
      */
     private string $companyName;
 
+    /**
+     * @ORM\Column(type="string", nullable=true)
+     */
+    private string $siret;
 
     public function __construct(
         string $companyName,
@@ -24,7 +28,8 @@ class CompanyCustomerEntity extends CustomerEntity
         string $country,
         string $email,
         string $firstname,
-        string $lastname
+        string $lastname,
+        ?string $siret
     )
     {
         parent::__construct(
@@ -37,6 +42,7 @@ class CompanyCustomerEntity extends CustomerEntity
             lastname: $lastname
         );
         $this->companyName = $companyName;
+        $this->siret =$siret;
     }
 
     public function getCompanyName(): string
@@ -53,5 +59,10 @@ class CompanyCustomerEntity extends CustomerEntity
     public function getMainContactName(): string
     {
         return $this->getFirstname() . " " . $this->getLastname();
+    }
+
+    public function getSiret(): ?string
+    {
+        return $this->siret;
     }
 }
