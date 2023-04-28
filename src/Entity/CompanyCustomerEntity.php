@@ -18,7 +18,7 @@ class CompanyCustomerEntity extends CustomerEntity
     /**
      * @ORM\Column(type="string", nullable=true)
      */
-    private string $siret;
+    private ?string $siret;
 
     public function __construct(
         string $companyName,
@@ -29,7 +29,7 @@ class CompanyCustomerEntity extends CustomerEntity
         string $email,
         string $firstname,
         string $lastname,
-        ?string $siret
+        ?string $siret = null
     )
     {
         parent::__construct(
@@ -64,5 +64,10 @@ class CompanyCustomerEntity extends CustomerEntity
     public function getSiret(): ?string
     {
         return $this->siret;
+    }
+
+    public function setSiret(?string $siret): void
+    {
+        $this->siret = $siret;
     }
 }
