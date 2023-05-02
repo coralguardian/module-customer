@@ -80,7 +80,8 @@ class NewCustomer
                     country: $customerModel->getCountry(),
                     email: $customerModel->getEmail(),
                     firstname: $customerModel->getFirstname(),
-                    lastname: $customerModel->getLastname()
+                    lastname: $customerModel->getLastname(),
+                    siret: $customerModel->getSiret()
                 );
 
                 $em->persist($customer);
