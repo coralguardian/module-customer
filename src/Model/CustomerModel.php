@@ -61,6 +61,8 @@ class CustomerModel implements \JsonSerializable
 
     private ?string $alternateNewsletterEmail = null;
 
+    private ?string $siret = null;
+
     public function afterMapping()
     {
         if($this->getCustomerType() === CustomerType::COMPANY) {
@@ -210,6 +212,18 @@ class CustomerModel implements \JsonSerializable
         return $this;
     }
 
+    public function getSiret(): ?string
+    {
+        return $this->siret;
+    }
+
+    public function setSiret(?string $siret): CustomerModel
+    {
+        $this->siret = $siret;
+
+        return $this;
+    }
+
     public function jsonSerialize()
     {
         $returnedValues = [
@@ -228,6 +242,7 @@ class CustomerModel implements \JsonSerializable
         if($this->getCustomerType() === CustomerType::COMPANY) {
             $returnedValues["companyName"] = $this->getCompanyName();
             $returnedValues["alternateNewsletterEmail"] = $this->getAlternateNewsletterEmail();
+            $returnedValues["siret"] = $this->getSiret();
         }
 
         return $returnedValues;
